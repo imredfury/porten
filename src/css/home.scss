@@ -1,0 +1,53 @@
+.home {
+  padding: 160px 0 154px;
+  background: url("../images/main img/Rectangle 3.png") center/cover no-repeat;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__box {
+    padding: 93px 68px 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: 320px;
+    border: 4px solid #FFFFFF;
+  &:hover{
+    -webkit-box-shadow: 0px 0px 17px 11px rgba(122, 30, 30, 1);
+    -moz-box-shadow: 0px 0px 17px 11px rgba(122, 30, 30, 1);
+    box-shadow: 0px 0px 17px 11px rgba(122, 30, 30, 1);
+  }
+
+    &-img {
+      width: 100%;
+      border-bottom: 2px solid white;
+    }
+  }
+
+  &__subtitle {
+    font-family: PT Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 7px;
+  }
+
+  &__desc {
+    font-family: PT Sans, sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 80px;
+  }
+}

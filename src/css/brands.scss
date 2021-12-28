@@ -1,0 +1,43 @@
+.brands {
+  padding: 60px 0 80px;
+  background-color: #0F0F0F;
+
+
+  &__title {
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+    position: relative;
+
+    &::after{
+      content: '';
+      width: 120px;
+      height: 0;
+      display: flex;
+      border-bottom: 1px solid white;
+      align-items: center;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 230px;
+    height: 94px;
+    column-gap: 30px;
+
+  }
+}

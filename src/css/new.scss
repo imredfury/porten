@@ -1,0 +1,78 @@
+.new {
+  background-color: black;
+  padding: 120px 0 150px;
+
+  &__title{
+    font-family: Playfair Display,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    &::after{
+      content: '';
+      width: 120px;
+      height: 0;
+      display: flex;
+      border-bottom: 1px solid white;
+      align-items: center;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+    }
+  }
+  &__watches{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__row1{
+    display: flex;
+    gap: 23px;
+    margin: 120px 0 40px;
+  }
+  &__row2{
+    display: flex;
+    gap: 23px;
+
+  }
+  &__box{
+    flex-direction: column;
+  }
+  &__pic{
+    background-color: #191B1C;
+    margin-bottom: 25px;
+    width: 260px;
+    height: 325px;
+  }
+  &__img{
+    display: flex;
+    padding: 55px 23px;
+  }
+  &__name{
+    font-family: Playfair Display,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+  }
+  &__price{
+    font-family: Playfair Display,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D0D0D0;
+  }
+
+
+
+}

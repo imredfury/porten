@@ -1,0 +1,134 @@
+.info {
+  background-color: black;
+
+  &__gallery {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__gallery-first {
+    padding: 93px 80px;
+    width: 47%;
+  }
+
+  &__gallery-one {
+
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__gallery-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin-top: 100px;
+  }
+
+  &__gallery-img {
+    background: #191B1C;
+    padding: 55px 22px;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 120px;
+      height: 0;
+      display: flex;
+      border-bottom: 1px solid white;
+      align-items: center;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+    }
+  }
+
+  &__subtitle {
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 25px 0 10px;
+  }
+
+  &__text {
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D0D0D0;
+  }
+
+  &__collection {
+    width: 47%;
+    text-align: center;
+    padding: 484px 0 112px;
+    background: url("../images/collection/Rectangle 8.png") center/cover no-repeat;
+
+    &-title {
+      font-family: Playfair Display, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding-bottom: 72px;
+      position: relative;
+
+      &::after{
+        content: '';
+        width: 120px;
+        height: 0;
+        display: flex;
+        border-bottom: 1px solid white;
+        align-items: center;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+      }
+    }
+
+    &-btn {
+      font-family: PT Sans, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-top: 22px;
+      background-color: transparent;
+      padding: 5px 20px;
+      border: 1px solid #fff;
+      cursor: pointer;
+      transition: 1s;
+    }
+    &-btn:hover{
+      font-size: 20px;
+      box-shadow: 10px 5px 5px gray;
+    }
+  }
+}
+
